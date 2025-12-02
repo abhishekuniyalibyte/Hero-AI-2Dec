@@ -1,0 +1,6 @@
+my project is to create a ai bot that will be a part of restaurant website. it will be conversation 
+based that will make user feel like they are talking to a person not a bot. user can ask for veg, vegan, 
+non veg food. bot can also ask for user mood so it can recommend food based on user mood. 
+it will do menu ordering and tell about services.i will use groq api key to use llama 4 maverick for llm
+for free. i will be working with backend developer which will handle django part.
+i will use terminal not streamlit to run my code so it can later on merge with backend easily.
