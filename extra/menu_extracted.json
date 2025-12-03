@@ -1,0 +1,188 @@
+{
+  "restaurant_name": "CAFE UNO",
+  "phone": "+91 92052111753",
+  "categories": [
+    {
+      "category": "Round The Clock Menu",
+      "items": [
+        {
+          "name": "VEG BURGER",
+          "price": 45
+        },
+        {
+          "name": "ALOO PYAZ PARATHA",
+          "price": 45
+        },
+        {
+          "name": "PANEER PARATHA",
+          "price": 60
+        },
+        {
+          "name": "MIXED PARATHA",
+          "price": 60
+        },
+        {
+          "name": "VEG MASALA MAGGI",
+          "price": 50
+        },
+        {
+          "name": "BREAD OMELETTE",
+          "price": 50
+        },
+        {
+          "name": "VEG GRILLED SANDWICH",
+          "price": 80
+        },
+        {
+          "name": "VEG GRILLED CHEESE SANDWICH",
+          "price": 100
+        },
+        {
+          "name": "CHOICES OF PASTA WITH CHEESE",
+          "price": 120
+        }
+      ]
+    },
+    {
+      "category": "Chinese",
+      "items": [
+        {
+          "name": "VEG NOODLES",
+          "price": 80
+        },
+        {
+          "name": "VEG FRIED RICE",
+          "price": 80
+        },
+        {
+          "name": "EGG NOODLES",
+          "price": 100
+        },
+        {
+          "name": "EGG FRIED RICE",
+          "price": 100
+        },
+        {
+          "name": "PANEER FRIED RICE",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "category": "South Indian",
+      "items": [
+        {
+          "name": "IDLI SMBHAR",
+          "price": 60
+        },
+        {
+          "name": "VADA SAMBHAR",
+          "price": 60
+        },
+        {
+          "name": "VEG UTTAPAM",
+          "price": 70
+        },
+        {
+          "name": "MASALA DOSA",
+          "price": 90
+        }
+      ]
+    },
+    {
+      "category": "Signature Snacks",
+      "items": [
+        {
+          "name": "CHILLI POTATO",
+          "price": 120
+        },
+        {
+          "name": "VEG MANCHURIAN DRY",
+          "price": 150
+        },
+        {
+          "name": "DAHI KE SHOLEY",
+          "price": 180
+        },
+        {
+          "name": "HARA BHARA KABAB",
+          "price": 180
+        },
+        {
+          "name": "CHEESE BALL",
+          "price": 180
+        },
+        {
+          "name": "CHILLI PANEER DRY",
+          "price": 180
+        },
+        {
+          "name": "PANEER SPRING ROLL",
+          "price": 180
+        }
+      ]
+    },
+    {
+      "category": "Beverages",
+      "items": [
+        {
+          "name": "MASALA TEA",
+          "price": 20
+        },
+        {
+          "name": "HOT COFFEE",
+          "price": 30
+        },
+        {
+          "name": "FRESH LIME SODA",
+          "price": 40
+        },
+        {
+          "name": "COLD COFFEE",
+          "price": 60
+        },
+        {
+          "name": "CHOCOLATE SHAKE",
+          "price": 60
+        },
+        {
+          "name": "OREO SHAKE",
+          "price": 60
+        },
+        {
+          "name": "BANANA SHAKE",
+          "price": 60
+        }
+      ]
+    },
+    {
+      "category": "Healthy Option",
+      "items": [
+        {
+          "name": "CHANA CHAAT",
+          "price": 50
+        },
+        {
+          "name": "CORN CHAAT",
+          "price": 50
+        },
+        {
+          "name": "UPMA",
+          "price": 50
+        },
+        {
+          "name": "VEG POHA",
+          "price": 50
+        },
+        {
+          "name": "CUT FRUITS",
+          "price": 60
+        },
+        {
+          "name": "VEG CHILLA",
+          "price": 70
+        }
+      ]
+    }
+  ]
+}
