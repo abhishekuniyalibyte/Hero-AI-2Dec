@@ -41,7 +41,7 @@ class MenuChatbot:
         # Conversation history
         self.conversation_history = []
         
-        print("✅ Chatbot ready!\n")
+        print("Chatbot ready!\n")
     
     def cosine_similarity(self, a, b):
         """Calculate cosine similarity between two vectors."""
@@ -208,7 +208,7 @@ Please answer the customer's question based ONLY on the menu items listed above.
     def reset_conversation(self):
         """Clear conversation history."""
         self.conversation_history = []
-        print("🔄 Conversation history cleared.")
+        print("Conversation history cleared.")
 
 
 def main():
@@ -223,7 +223,7 @@ def main():
         embeddings_path = sys.argv[1]
     
     if not os.path.exists(embeddings_path):
-        print(f"❌ Embeddings file not found: {embeddings_path}")
+        print(f"Embeddings file not found: {embeddings_path}")
         print("Please provide the correct path to your menu_embeddings.pkl file")
         exit(1)
     
@@ -231,7 +231,7 @@ def main():
     chatbot = MenuChatbot(embeddings_path)
     
     print("=" * 60)
-    print("🍽️  RESTAURANT MENU CHATBOT")
+    print("RESTAURANT MENU CHATBOT")
     print("=" * 60)
     print("Ask me anything about our menu!")
     print("Commands:")
@@ -249,7 +249,7 @@ def main():
                 continue
             
             if user_input.lower() in ['quit', 'exit', 'bye']:
-                print("\n👋 Thanks for chatting! Have a great day!")
+                print("\nThanks for chatting! Have a great day!")
                 break
             
             if user_input.lower() == 'reset':
@@ -257,16 +257,16 @@ def main():
                 continue
             
             # Get response
-            print("\n🤖 Assistant: ", end="", flush=True)
+            print("\nAssistant: ", end="", flush=True)
             response = chatbot.chat(user_input)
             print(response)
             print()
         
         except KeyboardInterrupt:
-            print("\n\n👋 Goodbye!")
+            print("\n\nGoodbye!")
             break
         except Exception as e:
-            print(f"\n❌ Error: {e}")
+            print(f"\nError: {e}")
             print()
 
 
