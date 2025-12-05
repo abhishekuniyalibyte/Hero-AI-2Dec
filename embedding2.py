@@ -1,3 +1,5 @@
+# Hero AI: embedding using thenlper/gte-large
+
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
@@ -152,7 +154,7 @@ def main():
     generator = MenuEmbeddingGenerator(model_name=args.model)
     generator.process_menu(args.input_json, args.output_file, args.format)
     
-    print("\n✓ Embedding generation complete!")
+    print("\nEmbedding generation complete!")
     print(f"  Input: {args.input_json}")
     print(f"  Output: {args.output_file}")
     print(f"  Format: {args.format}")

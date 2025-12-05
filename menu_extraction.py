@@ -1,4 +1,5 @@
-# hero ai
+# HERO AI: menu extraction from jpeg/pdf
+
 import base64
 import json
 import os
@@ -161,8 +162,8 @@ CRITICAL RULES:
         return json.loads(response)
 
     except json.JSONDecodeError as e:
-        print(f"⚠ JSON Decode Error: {e}")
-        print(f"⚠ Attempting to recover partial data...")
+        print(f"JSON Decode Error: {e}")
+        print(f"Attempting to recover partial data...")
         
         try:
             last_brace = response.rfind('}')
@@ -173,7 +174,7 @@ CRITICAL RULES:
                 test_json += '}' * (open_braces - close_braces)
                 
                 menu_data = json.loads(test_json)
-                print("✓ Recovered partial data")
+                print("Recovered partial data")
                 return menu_data
         except:
             pass
@@ -181,7 +182,7 @@ CRITICAL RULES:
         print("✗ Could not recover data")
         
         if not retry_with_shorter_prompt:
-            print("⚠ Retrying with minimal prompt...")
+            print("Retrying with minimal prompt...")
             return extract_menu_to_json(image_bytes, groq_api_key, retry_with_shorter_prompt=True)
         
         return None
@@ -284,11 +285,11 @@ if __name__ == "__main__":
 
         if page_data:
             save_page_json(page_data, temp_dir, i)
-            print(f"✓ Extracted {len(page_data.get('categories', []))} categories")
-            print(f"✓ Saved page {i} JSON")
+            print(f"Extracted {len(page_data.get('categories', []))} categories")
+            print(f"Saved page {i} JSON")
             successful_pages += 1
         else:
-            print(f"✗ Failed to extract page {i}")
+            print(f"Failed to extract page {i}")
 
     # Merge all page JSONs into final output
     if successful_pages > 0:
@@ -301,7 +302,7 @@ if __name__ == "__main__":
         
         # Clean up temp directory
         shutil.rmtree(temp_dir)
-        print(f"✓ Cleaned up temporary files")
+        print(f"Cleaned up temporary files")
         
         total = sum(len(c["items"]) for c in combined.get("categories", []))
         print(f"\n{'=' * 60}")
@@ -311,6 +312,6 @@ if __name__ == "__main__":
         print(f"Categories Extracted: {len(combined['categories'])}")
         print(f"Total Items: {total}")
     else:
-        print("\n✗ No data extracted from any page!")
+        print("\nNo data extracted from any page!")
         if os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
